@@ -5,7 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
- <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,500,700' rel='stylesheet' type='text/css'>
+ <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -22,7 +22,38 @@
 
 <body>
 
-<%= yield %>
+  <div class="header">
+  <div class ="container"> 
+    <div class="row">
+      <div class="col-xs-8"> 
+        <ul class="menu"> 
+          <li><%=link_to "Welcome", welcome_path() %></li> 
+           <li><%=link_to "Portfolio", portfolio_path() %></li> 
+          <li><%=link_to "Blog", blog_path() %></li> 
+          <li><%=link_to "About", about_path() %></li> 
+          <li><%=link_to "Contact", contact_path() %></li> 
+        </ul> 
+      </div> 
+      <div class="col-xs-4"> 
+        <h3 class="re-h3">Ngoc Ty</h3> 
+      </div> 
+    </div> 
+  </div> 
+</div>
+  <%=yield%>
+  <div class="footer"> 
+  <div class="container"> 
+    <ul class="social_media"> 
+      <li><a class="github" href="#">.</a></li> 
+      <li><a class="linkedin" href="#">.</a></li> 
+      <li><a class="twitter" href="#">.</a></li> 
+    </ul> 
+    <div class="clear">
+      <div class = "col-xs-12 text-right">
+    <p>© 2015 Ngoc Ty</p> </div> 
+    </div>
+  </div>
+</div>
 
 </body>
 </html>

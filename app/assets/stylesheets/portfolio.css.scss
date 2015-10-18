@@ -1,0 +1,54 @@
+
+.banner {
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 550px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-image: url("https://portfolio-rails-2633.herokuapp.com/assets/slide01-9d5c1b911de14032bbc4cc7b19514447.jpg");
+}
+
+.container
+{
+ margin-top : 20px;
+ margin-bottom : 20px;
+}
+.hinh {
+    padding: 0;
+    width: 100%;
+    color: #000;   
+}
+.hinh:hover {
+    color: #c770e4;
+    text-decoration: none;
+}
+.thumbnail-header {
+    padding: 2px;
+    margin-top: 50px;
+    background: #eaeff4;
+    overflow: hidden;
+    clear: both;
+}
+.thumbnail-header-btn {
+    background: #fff;
+    border-radius : 50%;
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin: 2px;
+}
+.thumbnail {
+    width: 100%;
+    overflow: hidden;
+    max-height: 240px;
+}
+.thumbnail img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
